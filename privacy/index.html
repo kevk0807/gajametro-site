@@ -26,10 +26,13 @@
     <p>在你授權下，App 會用裝置定位顯示最近車站與規劃路線。定位只在你的裝置上使用，不會上傳到我們的伺服器（本 App 沒有自己的伺服器）。</p>
 
     <h2>地點搜尋</h2>
-    <p>當你搜尋地點時，你輸入的關鍵字與目前地圖的中心座標會傳送給 Kakao 的地點搜尋服務以取得結果，這部分受 Kakao 的隱私政策規範。</p>
+    <p>當你搜尋地點時，你輸入的關鍵字與目前地圖的中心座標會傳送給 Kakao 的地點搜尋服務；如果 Kakao 找不到結果，或你輸入的是電話號碼，則會改傳送給 Google 的地點服務（Google Maps Platform）。這些分別受 Kakao 與 Google 的隱私政策規範。</p>
+
+    <h2>地點分區</h2>
+    <p>收藏地點的地址如果看不出所屬的區（例如英文地址），App 會把該地點的座標傳送給 Kakao，查詢所屬的區（구/군），用來在清單中分組顯示。</p>
 
     <h2>最近搜尋</h2>
-    <p>你在搜尋中點開過的地點（最多 10 筆）只存在你的裝置上，不會上傳，也不會同步到 iCloud；可以隨時在搜尋畫面刪除或全部清除。</p>
+    <p>你在搜尋中點開過的地點（最多 10 筆）只存在你的裝置上，不會上傳，也不會同步到 iCloud；超過 30 天會自動刪除，也可以隨時在搜尋畫面刪除或全部清除。</p>
 
     <h2>路線規劃與導航</h2>
     <p>規劃路線時，App 會把出發點、目的地與附近車站出口的座標傳送給 Apple 的地圖服務，以計算實際步行時間；當你選擇步行前往，App 會把目的地交給 Apple 地圖開啟。這些都受 Apple 的隱私政策規範。</p>
@@ -55,8 +58,9 @@
     <p class="muted">Effective 8 October 2026. The Chinese version above prevails.</p>
     <p>Gaja Metro is a Busan metro guide made by an individual developer. It has no sign-in, collects no name or contact details and uses no third-party analytics or tracking. The app has no server of its own.</p>
     <p><strong>Location</strong> — with your permission, your location is used on your device to show the nearest station and plan routes. It is not uploaded to us.</p>
-    <p><strong>Place search</strong> — the keywords you type and the map's centre coordinate are sent to Kakao's place search to get results, under Kakao's privacy policy.</p>
-    <p><strong>Recent searches</strong> — up to 10 places you opened from search are kept on your device only, never uploaded or synced; you can delete them in the search screen.</p>
+    <p><strong>Place search</strong> — the keywords you type and the map's centre coordinate are sent to Kakao's place search. If Kakao finds nothing, or you type a phone number, they are sent to Google's place service (Google Maps Platform) instead. Each is under its own provider's privacy policy.</p>
+    <p><strong>Districts</strong> — when a saved place's address does not show its district (for example an English address), its coordinate is sent to Kakao to look up the district (gu/gun) used to group your lists.</p>
+    <p><strong>Recent searches</strong> — up to 10 places you opened from search are kept on your device only, never uploaded or synced. They are deleted automatically after 30 days, and you can delete them in the search screen at any time.</p>
     <p><strong>Routes</strong> — origin, destination and nearby exit coordinates are sent to Apple's map services to estimate walking times, and a destination is handed to Apple Maps when you choose to walk there, under Apple's privacy policy.</p>
     <p><strong>Saved places</strong> — saved places and your nicknames, notes, links and photos are stored on your device and, if you are signed in to iCloud, synced through your own iCloud account. The developer cannot read them.</p>
     <p><strong>Shared lists</strong> — people you invite can view and edit the list's places, notes, links and photos, and see your iCloud name. Shared lists are stored in the creator's iCloud; the creator can stop sharing or delete a list and participants can leave at any time.</p>
